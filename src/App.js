@@ -15,11 +15,11 @@ import Navbar from "./NavBar";
 const App = () => {
   return (
     <div className="App">
-        <Navbar />
+        {/* <Navbar /> */}
         <BrowserRouter>
           <Routes>
-              <Route path={"/"} element={<DiaryApp />}></Route>
-              <Route path={"/AppTab"} element={<AppTab />}></Route>
+              {/* <Route path={"/"} element={<DiaryApp />}></Route> */}
+              <Route path={"/"} element={<AppTab />}></Route>
           </Routes>
       </BrowserRouter>
     </div>

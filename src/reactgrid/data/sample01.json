@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Goldner-Rodriguez",
+    "phone": "297-469-5428",
+    "email": "contact@goldner-rodriguez.com",
+    "website": "http://www.goldner-rodriguez.com",
+    "facebook": null,
+    "twitter": null,
+    "linkedIn": "https://www.linkedin.com/goldner-rodriguez",
+    "type": {
+      "id": 5,
+      "label": "Investor"
+    },
+    "annualRevenue": 14130000.0,
+    "noOfEmployees": 97,
+    "industry": {
+      "id": 4,
+      "label": "Chemical"
+    },
+    "address": "5 Ridge Oak Trail",
+    "permissionToCall": true,
+    "permissionToEmail": null,
+    "permissionToFax": false,
+    "notes": "Devolved human-resource access",
+    "createdOn": "2016-11-23T08:59:25Z",
+    "createdBy": {
+      "id": 11,
+      "username": "julee.tomasini"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ritchie, Dare and Veum",
+    "phone": "653-266-3193",
+    "email": "contact@ritchie.com",
+    "website": "http://www.ritchie.com",
+    "facebook": null,
+    "twitter": null,
+    "linkedIn": "https://www.linkedin.com/ritchie",
+    "type": {
+      "id": 7,
+      "label": "Partner"
+    },
+    "annualRevenue": 92414000.0,
+    "noOfEmployees": 136,
+    "industry": {
+      "id": 3,
+      "label": "Beverage & Tobacco"
+    },
+    "address": "0 Fairfield Trail",
+    "permissionToCall": true,
+    "permissionToEmail": null,
+    "permissionToFax": false,
+    "notes": "Networked bifurcated migration",
+    "createdOn": "2017-05-02T23:09:44Z",
+    "createdBy": {
+      "id": 12,
+      "username": "broddie.shoveller"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Stiedemann and Sons",
+    "phone": "142-403-6183",
+    "email": "contact@stiedemann.com",
+    "website": "http://www.stiedemann.com",
+    "facebook": null,
+    "twitter": null,
+    "linkedIn": null,
+    "type": {
+      "id": 6,
+      "label": "Other"
+    },
+    "annualRevenue": 83878000.0,
+    "noOfEmployees": 174,
+    "industry": {
+      "id": 10,
+      "label": "Internet"
+    },
+    "address": "1 Sachtjen Road",
+    "permissionToCall": true,
+    "permissionToEmail": null,
+    "permissionToFax": false,
+    "notes": null,
+    "createdOn": "2017-04-05T21:13:53Z",
+    "createdBy": {
+      "id": 8,
+      "username": "lester.janney"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Lemke-Mueller",
+    "phone": "918-317-0452",
+    "email": "contact@lemke-mueller.com",
+    "website": "http://www.lemke-mueller.com",
+    "facebook": "https://www.facebook.com/lemke-mueller",
+    "twitter": "https://www.twitter.com/lemke-mueller",
+    "linkedIn": null,
+    "type": {
+      "id": 6,
+      "label": "Other"
+    },
+    "annualRevenue": 32798000.0,
+    "noOfEmployees": 138,
+    "industry": {
+      "id": 8,
+      "label": "Grocery"
+    },
+    "address": "3461 Dapin Road",
+    "permissionToCall": true,
+    "permissionToEmail": null,
+    "permissionToFax": true,
+    "notes": "Progressive attitude-oriented circuit",
+    "createdOn": "2017-01-10T18:55:34Z",
+    "createdBy": {
+      "id": 1,
+      "username": "brooke.muslim"
+    }
+  }
+]
