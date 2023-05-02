@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 import DiaryApp from './diary/DiaryApp';
 import Sample01Grid from './reactgrid/Sample01';
 import Sample02Grid from './reactgrid/Sample02';
-
+import Sample03Grid from './reactgrid/Sample03';
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -54,17 +54,17 @@ export default function BasicTabs() {
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="Diary" {...a11yProps(0)} />
           <Tab label="react-grid" {...a11yProps(1)} />
-          {/* <Tab label="Item Three" {...a11yProps(2)} /> */}
+          <Tab label="Sample03Grid" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <Sample02Grid />
-      </TabPanel>
-      <TabPanel value={value} index={1}>
         <DiaryApp />
       </TabPanel>
+      <TabPanel value={value} index={1}>
+        <Sample02Grid />
+      </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <Sample03Grid />
       </TabPanel>
     </Box>
   );

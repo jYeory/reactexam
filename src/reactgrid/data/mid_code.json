@@ -1,0 +1,536 @@
+[
+  {
+    "salsItemMclsCd": "01",
+    "salsItemMclsNm": "도시락",
+    "salsItemLclsCd": "01",
+    "salsItemLclsNm": "FreshFood"
+  },
+  {
+    "salsItemMclsCd": "02",
+    "salsItemMclsNm": "김밥",
+    "salsItemLclsCd": "01",
+    "salsItemLclsNm": "FreshFood"
+  },
+  {
+    "salsItemMclsCd": "03",
+    "salsItemMclsNm": "주먹밥",
+    "salsItemLclsCd": "01",
+    "salsItemLclsNm": "FreshFood"
+  },
+  {
+    "salsItemMclsCd": "04",
+    "salsItemMclsNm": "햄버거/샌드위치",
+    "salsItemLclsCd": "01",
+    "salsItemLclsNm": "FreshFood"
+  },
+  {
+    "salsItemMclsCd": "05",
+    "salsItemMclsNm": "카운터FF",
+    "salsItemLclsCd": "01",
+    "salsItemLclsNm": "FreshFood"
+  },
+  {
+    "salsItemMclsCd": "06",
+    "salsItemMclsNm": "FF간편식",
+    "salsItemLclsCd": "01",
+    "salsItemLclsNm": "FreshFood"
+  },
+  {
+    "salsItemMclsCd": "07",
+    "salsItemMclsNm": "냉장간편식품",
+    "salsItemLclsCd": "02",
+    "salsItemLclsNm": "간편식품"
+  },
+  {
+    "salsItemMclsCd": "08",
+    "salsItemMclsNm": "냉동간편식품",
+    "salsItemLclsCd": "02",
+    "salsItemLclsNm": "간편식품"
+  },
+  {
+    "salsItemMclsCd": "09",
+    "salsItemMclsNm": "빵류",
+    "salsItemLclsCd": "02",
+    "salsItemLclsNm": "간편식품"
+  },
+  {
+    "salsItemMclsCd": "10",
+    "salsItemMclsNm": "점내조리",
+    "salsItemLclsCd": "03",
+    "salsItemLclsNm": "조리식품"
+  },
+  {
+    "salsItemMclsCd": "11",
+    "salsItemMclsNm": "특정판매",
+    "salsItemLclsCd": "03",
+    "salsItemLclsNm": "조리식품"
+  },
+  {
+    "salsItemMclsCd": "12",
+    "salsItemMclsNm": "외주조리",
+    "salsItemLclsCd": "03",
+    "salsItemLclsNm": "조리식품"
+  },
+  {
+    "salsItemMclsCd": "13",
+    "salsItemMclsNm": "육가공",
+    "salsItemLclsCd": "04",
+    "salsItemLclsNm": "냉장식품"
+  },
+  {
+    "salsItemMclsCd": "14",
+    "salsItemMclsNm": "어묵/맛살",
+    "salsItemLclsCd": "04",
+    "salsItemLclsNm": "냉장식품"
+  },
+  {
+    "salsItemMclsCd": "15",
+    "salsItemMclsNm": "두부/나물",
+    "salsItemLclsCd": "04",
+    "salsItemLclsNm": "냉장식품"
+  },
+  {
+    "salsItemMclsCd": "16",
+    "salsItemMclsNm": "근채",
+    "salsItemLclsCd": "05",
+    "salsItemLclsNm": "채소"
+  },
+  {
+    "salsItemMclsCd": "17",
+    "salsItemMclsNm": "과채",
+    "salsItemLclsCd": "05",
+    "salsItemLclsNm": "채소"
+  },
+  {
+    "salsItemMclsCd": "18",
+    "salsItemMclsNm": "엽채",
+    "salsItemLclsCd": "05",
+    "salsItemLclsNm": "채소"
+  },
+  {
+    "salsItemMclsCd": "19",
+    "salsItemMclsNm": "양념",
+    "salsItemLclsCd": "05",
+    "salsItemLclsNm": "채소"
+  },
+  {
+    "salsItemMclsCd": "20",
+    "salsItemMclsNm": "샐러드",
+    "salsItemLclsCd": "05",
+    "salsItemLclsNm": "채소"
+  },
+  {
+    "salsItemMclsCd": "21",
+    "salsItemMclsNm": "버섯",
+    "salsItemLclsCd": "05",
+    "salsItemLclsNm": "채소"
+  },
+  {
+    "salsItemMclsCd": "22",
+    "salsItemMclsNm": "김치",
+    "salsItemLclsCd": "05",
+    "salsItemLclsNm": "채소"
+  },
+  {
+    "salsItemMclsCd": "23",
+    "salsItemMclsNm": "나물",
+    "salsItemLclsCd": "05",
+    "salsItemLclsNm": "채소"
+  },
+  {
+    "salsItemMclsCd": "24",
+    "salsItemMclsNm": "양곡",
+    "salsItemLclsCd": "05",
+    "salsItemLclsNm": "채소"
+  },
+  {
+    "salsItemMclsCd": "25",
+    "salsItemMclsNm": "채소가공",
+    "salsItemLclsCd": "05",
+    "salsItemLclsNm": "채소"
+  },
+  {
+    "salsItemMclsCd": "26",
+    "salsItemMclsNm": "국산과일",
+    "salsItemLclsCd": "06",
+    "salsItemLclsNm": "과일"
+  },
+  {
+    "salsItemMclsCd": "27",
+    "salsItemMclsNm": "수입과일",
+    "salsItemLclsCd": "06",
+    "salsItemLclsNm": "과일"
+  },
+  {
+    "salsItemMclsCd": "28",
+    "salsItemMclsNm": "건과",
+    "salsItemLclsCd": "06",
+    "salsItemLclsNm": "과일"
+  },
+  {
+    "salsItemMclsCd": "29",
+    "salsItemMclsNm": "과일가공",
+    "salsItemLclsCd": "06",
+    "salsItemLclsNm": "과일"
+  },
+  {
+    "salsItemMclsCd": "30",
+    "salsItemMclsNm": "국산돈육",
+    "salsItemLclsCd": "07",
+    "salsItemLclsNm": "축산"
+  },
+  {
+    "salsItemMclsCd": "31",
+    "salsItemMclsNm": "계육/계란",
+    "salsItemLclsCd": "07",
+    "salsItemLclsNm": "축산"
+  },
+  {
+    "salsItemMclsCd": "32",
+    "salsItemMclsNm": "국산우육",
+    "salsItemLclsCd": "07",
+    "salsItemLclsNm": "축산"
+  },
+  {
+    "salsItemMclsCd": "33",
+    "salsItemMclsNm": "수입육",
+    "salsItemLclsCd": "07",
+    "salsItemLclsNm": "축산"
+  },
+  {
+    "salsItemMclsCd": "34",
+    "salsItemMclsNm": "축산가공",
+    "salsItemLclsCd": "07",
+    "salsItemLclsNm": "축산"
+  },
+  {
+    "salsItemMclsCd": "35",
+    "salsItemMclsNm": "어류",
+    "salsItemLclsCd": "08",
+    "salsItemLclsNm": "수산"
+  },
+  {
+    "salsItemMclsCd": "36",
+    "salsItemMclsNm": "해물",
+    "salsItemLclsCd": "08",
+    "salsItemLclsNm": "수산"
+  },
+  {
+    "salsItemMclsCd": "37",
+    "salsItemMclsNm": "건어",
+    "salsItemLclsCd": "08",
+    "salsItemLclsNm": "수산"
+  },
+  {
+    "salsItemMclsCd": "38",
+    "salsItemMclsNm": "수산가공",
+    "salsItemLclsCd": "08",
+    "salsItemLclsNm": "수산"
+  },
+  {
+    "salsItemMclsCd": "39",
+    "salsItemMclsNm": "우유",
+    "salsItemLclsCd": "09",
+    "salsItemLclsNm": "유제품"
+  },
+  {
+    "salsItemMclsCd": "40",
+    "salsItemMclsNm": "발효유",
+    "salsItemLclsCd": "09",
+    "salsItemLclsNm": "유제품"
+  },
+  {
+    "salsItemMclsCd": "41",
+    "salsItemMclsNm": "냉장음료",
+    "salsItemLclsCd": "09",
+    "salsItemLclsNm": "유제품"
+  },
+  {
+    "salsItemMclsCd": "42",
+    "salsItemMclsNm": "치즈/버터",
+    "salsItemLclsCd": "09",
+    "salsItemLclsNm": "유제품"
+  },
+  {
+    "salsItemMclsCd": "43",
+    "salsItemMclsNm": "아이스크림",
+    "salsItemLclsCd": "10",
+    "salsItemLclsNm": "빙과류"
+  },
+  {
+    "salsItemMclsCd": "44",
+    "salsItemMclsNm": "얼음",
+    "salsItemLclsCd": "10",
+    "salsItemLclsNm": "빙과류"
+  },
+  {
+    "salsItemMclsCd": "45",
+    "salsItemMclsNm": "커피/차음료",
+    "salsItemLclsCd": "11",
+    "salsItemLclsNm": "음료"
+  },
+  {
+    "salsItemMclsCd": "46",
+    "salsItemMclsNm": "기능성음료",
+    "salsItemLclsCd": "11",
+    "salsItemLclsNm": "음료"
+  },
+  {
+    "salsItemMclsCd": "47",
+    "salsItemMclsNm": "탄산음료",
+    "salsItemLclsCd": "11",
+    "salsItemLclsNm": "음료"
+  },
+  {
+    "salsItemMclsCd": "48",
+    "salsItemMclsNm": "생수/탄산수",
+    "salsItemLclsCd": "11",
+    "salsItemLclsNm": "음료"
+  },
+  {
+    "salsItemMclsCd": "49",
+    "salsItemMclsNm": "주스",
+    "salsItemLclsCd": "11",
+    "salsItemLclsNm": "음료"
+  },
+  {
+    "salsItemMclsCd": "50",
+    "salsItemMclsNm": "맥주",
+    "salsItemLclsCd": "12",
+    "salsItemLclsNm": "주류"
+  },
+  {
+    "salsItemMclsCd": "51",
+    "salsItemMclsNm": "소주/전통주",
+    "salsItemLclsCd": "12",
+    "salsItemLclsNm": "주류"
+  },
+  {
+    "salsItemMclsCd": "52",
+    "salsItemMclsNm": "양주/와인",
+    "salsItemLclsCd": "12",
+    "salsItemLclsNm": "주류"
+  },
+  {
+    "salsItemMclsCd": "53",
+    "salsItemMclsNm": "스낵",
+    "salsItemLclsCd": "13",
+    "salsItemLclsNm": "과자"
+  },
+  {
+    "salsItemMclsCd": "54",
+    "salsItemMclsNm": "쿠키/샌드",
+    "salsItemLclsCd": "13",
+    "salsItemLclsNm": "과자"
+  },
+  {
+    "salsItemMclsCd": "55",
+    "salsItemMclsNm": "캔디/껌",
+    "salsItemLclsCd": "13",
+    "salsItemLclsNm": "과자"
+  },
+  {
+    "salsItemMclsCd": "56",
+    "salsItemMclsNm": "초콜릿",
+    "salsItemLclsCd": "13",
+    "salsItemLclsNm": "과자"
+  },
+  {
+    "salsItemMclsCd": "57",
+    "salsItemMclsNm": "안주",
+    "salsItemLclsCd": "13",
+    "salsItemLclsNm": "과자"
+  },
+  {
+    "salsItemMclsCd": "58",
+    "salsItemMclsNm": "면류",
+    "salsItemLclsCd": "14",
+    "salsItemLclsNm": "일반식품"
+  },
+  {
+    "salsItemMclsCd": "59",
+    "salsItemMclsNm": "즉석식품",
+    "salsItemLclsCd": "14",
+    "salsItemLclsNm": "일반식품"
+  },
+  {
+    "salsItemMclsCd": "60",
+    "salsItemMclsNm": "커피/차",
+    "salsItemLclsCd": "14",
+    "salsItemLclsNm": "일반식품"
+  },
+  {
+    "salsItemMclsCd": "61",
+    "salsItemMclsNm": "조미료",
+    "salsItemLclsCd": "14",
+    "salsItemLclsNm": "일반식품"
+  },
+  {
+    "salsItemMclsCd": "62",
+    "salsItemMclsNm": "통조림",
+    "salsItemLclsCd": "14",
+    "salsItemLclsNm": "일반식품"
+  },
+  {
+    "salsItemMclsCd": "63",
+    "salsItemMclsNm": "씨리얼/유아식",
+    "salsItemLclsCd": "14",
+    "salsItemLclsNm": "일반식품"
+  },
+  {
+    "salsItemMclsCd": "64",
+    "salsItemMclsNm": "식용유/참기름",
+    "salsItemLclsCd": "14",
+    "salsItemLclsNm": "일반식품"
+  },
+  {
+    "salsItemMclsCd": "65",
+    "salsItemMclsNm": "담배",
+    "salsItemLclsCd": "15",
+    "salsItemLclsNm": "서비스"
+  },
+  {
+    "salsItemMclsCd": "66",
+    "salsItemMclsNm": "서비스상품",
+    "salsItemLclsCd": "15",
+    "salsItemLclsNm": "서비스"
+  },
+  {
+    "salsItemMclsCd": "67",
+    "salsItemMclsNm": "개인위생",
+    "salsItemLclsCd": "16",
+    "salsItemLclsNm": "헬스"
+  },
+  {
+    "salsItemMclsCd": "68",
+    "salsItemMclsNm": "의약/의료",
+    "salsItemLclsCd": "16",
+    "salsItemLclsNm": "헬스"
+  },
+  {
+    "salsItemMclsCd": "69",
+    "salsItemMclsNm": "건강",
+    "salsItemLclsCd": "16",
+    "salsItemLclsNm": "헬스"
+  },
+  {
+    "salsItemMclsCd": "73",
+    "salsItemMclsNm": "색조화장품",
+    "salsItemLclsCd": "17",
+    "salsItemLclsNm": "뷰티"
+  },
+  {
+    "salsItemMclsCd": "74",
+    "salsItemMclsNm": "바디용품",
+    "salsItemLclsCd": "17",
+    "salsItemLclsNm": "뷰티"
+  },
+  {
+    "salsItemMclsCd": "75",
+    "salsItemMclsNm": "생리대/화장지",
+    "salsItemLclsCd": "18",
+    "salsItemLclsNm": "일상용품"
+  },
+  {
+    "salsItemMclsCd": "76",
+    "salsItemMclsNm": "생활용품",
+    "salsItemLclsCd": "18",
+    "salsItemLclsNm": "일상용품"
+  },
+  {
+    "salsItemMclsCd": "77",
+    "salsItemMclsNm": "문화/가전",
+    "salsItemLclsCd": "18",
+    "salsItemLclsNm": "일상용품"
+  },
+  {
+    "salsItemMclsCd": "78",
+    "salsItemMclsNm": "가사용품",
+    "salsItemLclsCd": "18",
+    "salsItemLclsNm": "일상용품"
+  },
+  {
+    "salsItemMclsCd": "79",
+    "salsItemMclsNm": "의류용품",
+    "salsItemLclsCd": "18",
+    "salsItemLclsNm": "일상용품"
+  },
+  {
+    "salsItemMclsCd": "80",
+    "salsItemMclsNm": "반려동물",
+    "salsItemLclsCd": "18",
+    "salsItemLclsNm": "일상용품"
+  },
+  {
+    "salsItemMclsCd": "81",
+    "salsItemMclsNm": "한식",
+    "salsItemLclsCd": "19",
+    "salsItemLclsNm": "심플리쿡"
+  },
+  {
+    "salsItemMclsCd": "82",
+    "salsItemMclsNm": "아시안",
+    "salsItemLclsCd": "19",
+    "salsItemLclsNm": "심플리쿡"
+  },
+  {
+    "salsItemMclsCd": "83",
+    "salsItemMclsNm": "양식",
+    "salsItemLclsCd": "19",
+    "salsItemLclsNm": "심플리쿡"
+  },
+  {
+    "salsItemMclsCd": "88",
+    "salsItemMclsNm": "특정판매/수수료",
+    "salsItemLclsCd": "19",
+    "salsItemLclsNm": "심플리쿡"
+  },
+  {
+    "salsItemMclsCd": "89",
+    "salsItemMclsNm": "외주조리",
+    "salsItemLclsCd": "19",
+    "salsItemLclsNm": "심플리쿡"
+  },
+  {
+    "salsItemMclsCd": "90",
+    "salsItemMclsNm": "온라인주류",
+    "salsItemLclsCd": "12",
+    "salsItemLclsNm": "주류"
+  },
+  {
+    "salsItemMclsCd": "91",
+    "salsItemMclsNm": "수수료상품",
+    "salsItemLclsCd": "15",
+    "salsItemLclsNm": "서비스"
+  },
+  {
+    "salsItemMclsCd": "93",
+    "salsItemMclsNm": "Other Business",
+    "salsItemLclsCd": "21",
+    "salsItemLclsNm": "Other Business"
+  },
+  {
+    "salsItemMclsCd": "99",
+    "salsItemMclsNm": "소모품",
+    "salsItemLclsCd": "99",
+    "salsItemLclsNm": "소모품"
+  },
+  {
+    "salsItemMclsCd": "70",
+    "salsItemMclsNm": "헤어용품",
+    "salsItemLclsCd": "17",
+    "salsItemLclsNm": "뷰티"
+  },
+  {
+    "salsItemMclsCd": "71",
+    "salsItemMclsNm": "기초화장품",
+    "salsItemLclsCd": "17",
+    "salsItemLclsNm": "뷰티"
+  },
+  {
+    "salsItemMclsCd": "72",
+    "salsItemMclsNm": "미용소품",
+    "salsItemLclsCd": "17",
+    "salsItemLclsNm": "뷰티"
+  }
+]
