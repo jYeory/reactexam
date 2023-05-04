@@ -6,49 +6,125 @@ import '@inovua/reactdatagrid-enterprise/index.css'
 import NumberFilter from '@inovua/reactdatagrid-community/NumberFilter';
 import SelectFilter from '@inovua/reactdatagrid-community/SelectFilter';
 
-import Button from '@inovua/reactdatagrid-community/packages/Button'
-
-import data from './data/sample01.json';
-import contractJson from './data/contracts.json';
-
-const API_URL = 'https://demos.reactdatagrid.io/api/v1/'
+import masterData from './data/sample01.json';
+// import detailData from './data/contracts.json';
 
 const accountsGridStyle = { minHeight: 800 }
-
-// const getDataSource = (entity) => {
-//   console.log({ data, count: parseInt(data.length) });
-//   return { data, count: parseInt(data.length) };
-// }
+const data = [
+  {
+    "id": 157,
+    "firstName": "Merl",
+    "lastName": "Jordeson",
+    "gender": null,
+    "email": "merl.jordeson@kaymbo.com",
+    "phone": null,
+    "dateOfBirth": "1982-05-04T00:00:00Z",
+    "facebook": "https://www.facebook.com/merl.jordeson",
+    "twitter": null,
+    "linkedIn": null,
+    "address": null,
+    "permissionToCall": true,
+    "permissionToEmail": false,
+    "notes": null,
+    "createdOn": "2017-09-01T04:40:40Z",
+    "pictureId": null,
+    "account": {
+      "id": 1,
+      "name": "Goldner-Rodriguez"
+    },
+    "createdBy": {
+      "id": 11,
+      "username": "julee.tomasini"
+    }
+  },
+  {
+    "id": 251,
+    "firstName": "Jenny",
+    "lastName": "Jansema",
+    "gender": null,
+    "email": "jenny.jansema@kaymbo.com",
+    "phone": "581-931-5040",
+    "dateOfBirth": "1982-08-06T00:00:00Z",
+    "facebook": "https://www.facebook.com/jenny.jansema",
+    "twitter": null,
+    "linkedIn": "https://www.linkedin.com/jenny.jansema",
+    "address": "550 Boyd Crossing",
+    "permissionToCall": false,
+    "permissionToEmail": true,
+    "notes": "Focused 24 hour concept",
+    "createdOn": "2017-07-31T21:50:38Z",
+    "pictureId": null,
+    "account": {
+      "id": 1,
+      "name": "Goldner-Rodriguez"
+    },
+    "createdBy": {
+      "id": 8,
+      "username": "lester.janney"
+    }
+  },
+  {
+    "id": 395,
+    "firstName": "Pedro",
+    "lastName": "Hotson",
+    "gender": null,
+    "email": "pedro.hotson@kaymbo.com",
+    "phone": "343-264-5948",
+    "dateOfBirth": "1982-12-28T00:00:00Z",
+    "facebook": "https://www.facebook.com/pedro.hotson",
+    "twitter": null,
+    "linkedIn": "https://www.linkedin.com/pedro.hotson",
+    "address": "78 Redwing Alley",
+    "permissionToCall": false,
+    "permissionToEmail": true,
+    "notes": null,
+    "createdOn": "2017-07-27T05:41:35Z",
+    "pictureId": null,
+    "account": {
+      "id": 1,
+      "name": "Goldner-Rodriguez"
+    },
+    "createdBy": {
+      "id": 6,
+      "username": "barnie.caherny"
+    }
+  },
+  {
+    "id": 606,
+    "firstName": "Lynnet",
+    "lastName": "Feldhammer",
+    "gender": null,
+    "email": "lynnet.feldhammer@kaymbo.com",
+    "phone": null,
+    "dateOfBirth": "1983-07-27T00:00:00Z",
+    "facebook": "https://www.facebook.com/lynnet.feldhammer",
+    "twitter": null,
+    "linkedIn": "https://www.linkedin.com/lynnet.feldhammer",
+    "address": "85213 Fairview Parkway",
+    "permissionToCall": true,
+    "permissionToEmail": false,
+    "notes": null,
+    "createdOn": "2017-01-08T23:46:59Z",
+    "pictureId": null,
+    "account": {
+      "id": 1,
+      "name": "Goldner-Rodriguez"
+    },
+    "createdBy": {
+      "id": 7,
+      "username": "karoly.garey"
+    }
+  }
+];
 
 const getDataSource = (entity) => {
   return ({ skip, limit, sortInfo, groupBy, filterValue }) => {
-    const queryParams = [
-      skip ? "skip=" + skip : null,
-      limit ? "limit=" + limit : null,
-      groupBy && groupBy.length ? "groupBy=" + groupBy : null,
-      filterValue && filterValue.length
-        ? "filterBy=" + JSON.stringify(
-            filterValue.filter(v => v.active !== false).map(v => ({
-              value: v.value,
-              name: v.name,
-              operator: v.operator,
-              type: v.type
-            }))
-          )
-        : null,
-      sortInfo ? "sortInfo=" + JSON.stringify(sortInfo) : null
-    ]
-      .filter(value => value)
-      .join('&');
-
-    return fetch(API_URL + '/' + entity + '?' + queryParams).then(response => {
-      const totalCount = response.headers.get('X-Total-Count');
-      return response.json().then(data => {
-        console.log(data);
-        return { data, count: parseInt(totalCount) };
-      })
-
-    })
+    // console.log(filterValue);
+    let id = filterValue[0].id;
+    // let data = detailData[0][id];
+    // console.log({ data, count: parseInt(data.length) });
+    console.log(data);
+    return { data, count: parseInt(data.length) };
   }
 }
 
@@ -142,8 +218,6 @@ const columns = [
   }
 ];
 
-const dataSourceCache = {}
-
 const contactsColumns = [
   { name: 'id', maxWidth: 50, defaultVisible, header: 'ID', },
   {
@@ -157,7 +231,6 @@ const contactsColumns = [
   {
     name: "account",
     header: 'Account',
-    defaultVisible,
     groupByName: "account.name",
     sortName: "account.name",
     filterName: "account.name",
@@ -166,7 +239,6 @@ const contactsColumns = [
   {
     name: 'dateOfBirth',
     header: 'Date of Birth',
-    defaultVisible,
     renderGroupTitle,
     render: ({ data }) => {
       return data.dateOfBirth.toString();
@@ -214,123 +286,43 @@ const contactsColumns = [
   },
 ];
 
-const getContactsFilterValue = (account) => {
-  return [
-    {
-      name: 'account.id',
-      value: account ? account.id: '',
-      operator: 'eq',
-      type: 'string'
-    },
-    {
-      name: 'firstName',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'phone',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'email',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'account',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'facebook',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'twitter',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'address',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'createdBy',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'linkedIn',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'permissionToCall',
-      type: 'bool',
-      operator: 'eq',
-      value: null
-    },
-    {
-      name: 'permissionToEmail',
-      type: 'bool',
-      operator: 'eq',
-      value: null
-    }
-  ]
-}
-
-const defaultGroupBy = []
-
 const accountRowHeight = 40
-const contactRowHeight = accountRowHeight
 const accountExpandHeight = 500
-
 
 const Sample01Grid = () => {
   const [accountRowHeights, setAccountRowHeights] = useState({});
 
-  const accountsDataSource = useCallback(getDataSource('accounts'), [])
   const contactsDataSource = useCallback(getDataSource('contacts'), [])
 
-  const renderContactsGrid = ({ data }) => {
-    const defaultFilterValue = getContactsFilterValue(data);
-
+  const renderContactsGrid = useCallback(({ data }) => {
+    let filterValue = [
+      {
+        id: data.id
+      }
+    ]
+    // defaultFilterValue 옵션 필수
     return (
       <ReactDataGrid
-        defaultFilterValue={defaultFilterValue}
+        defaultFilterValue={filterValue}
         dataSource={contactsDataSource}
-        pagination
         columns={contactsColumns}
         columnDefaultWidth={200}
       />
-    )
-  }
+    );
+  }, [])
 
   return (
     <ReactDataGrid
-      dataSource={accountsDataSource}
+      dataSource={masterData}
       style={accountsGridStyle}
       rowHeight={accountRowHeight}
       pagination='local'
       rowExpandHeight={accountExpandHeight}
       rowHeights={accountRowHeights}
       renderDetailsGrid={renderContactsGrid}
-      defaultGroupBy={defaultGroupBy}
       columnDefaultWidth={200}
       columns={columns}
-      defaultLimit={2}
+      defaultLimit={5}
     />
   );
 }

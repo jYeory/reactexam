@@ -40,94 +40,14 @@ const columns = [
   { name: 'salsItemMclsNm', header: '중분류명' }
 ];
 
-const dataSourceCache = {}
-const defaultGroupBy = []
 const accountRowHeight = 40
-const contactRowHeight = accountRowHeight
-const accountExpandHeight = 500
+const accountExpandHeight = 200
 
 const grid2Columns = [
   { name: 'purcndCd', maxWidth: 150, header: '구매조건코드', },
   { name: 'purcndNm', maxWidth: 150, header: '구매조건명', },
   { name: 'amt', maxWidth: 150, header: '정산금액', },
 ]
-
-const getContactsFilterValue = (account) => {
-  return [
-    {
-      name: 'account.id',
-      value: account ? account.id: '',
-      operator: 'eq',
-      type: 'string'
-    },
-    {
-      name: 'firstName',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'phone',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'email',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'account',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'facebook',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'twitter',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'address',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'createdBy',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'linkedIn',
-      type: 'string',
-      operator: 'contains',
-      value: ''
-    },
-    {
-      name: 'permissionToCall',
-      type: 'bool',
-      operator: 'eq',
-      value: null
-    },
-    {
-      name: 'permissionToEmail',
-      type: 'bool',
-      operator: 'eq',
-      value: null
-    }
-  ]
-}
 
 const grid3Columns = [
   { name: 'midCd', maxWidth: 150, header: '중분류코드' },
@@ -142,11 +62,9 @@ const Sample03Grid = () => {
   const contactsDataSource = useCallback(getDataSource('contacts'), [])
 
   const renderContactsGrid = ({ data }) => {
-    const defaultFilterValue = getContactsFilterValue(data);
-
+    console.log(data);
     return (
       <ReactDataGrid
-        defaultFilterValue={defaultFilterValue}
         dataSource={contactsDataSource}
         columns={grid3Columns}
         columnDefaultWidth={200}
@@ -164,7 +82,6 @@ const Sample03Grid = () => {
         pagination
         rowExpandHeight={accountExpandHeight}
         rowHeights={accountRowHeights}
-        defaultGroupBy={defaultGroupBy}
         columnDefaultWidth={200}
         columns={columns}
         defaultLimit={10}
@@ -180,7 +97,6 @@ const Sample03Grid = () => {
         rowExpandHeight={accountExpandHeight}
         rowHeights={accountRowHeights}
         renderDetailsGrid={renderContactsGrid}
-        defaultGroupBy={defaultGroupBy}
         columnDefaultWidth={200}
         columns={grid2Columns}
         defaultLimit={10}

@@ -61,7 +61,7 @@ export default function BasicTabs() {
         <DiaryApp />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Sample02Grid />
+        <Sample01Grid />
       </TabPanel>
       <TabPanel value={value} index={2}>
         <Sample03Grid />
